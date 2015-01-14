@@ -32,11 +32,6 @@ window.Shortly = Backbone.View.extend({
     this.router.navigate('/create', { trigger: true });
   },
 
-  renderLogOut: function(e){
-    e && e.preventDefault();
-    this.router.navigate('/logout', { trigger: true });
-  },
-
   updateNav: function(routeName){
     this.$el.find('.navigation li a')
       .removeClass('selected')
